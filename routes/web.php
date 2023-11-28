@@ -9,7 +9,7 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\LocaleController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AlunoController;
-
+use App\Http\Controllers\SearchController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -20,6 +20,13 @@ use App\Http\Controllers\AlunoController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+Route::post('/contratar/{aluno}', [AlunoController::class, 'contratar'])->name('aluno.contratar');
+Route::get('search', [SearchController::class, 'search'])->name('search');
+Route::view('/resultado-nao-encontrado', 'site.resultado_nao_encontrado')->name('resultado_nao_encontrado');
+
+
+
 
 Route::middleware('locale')->group(function () {
 
@@ -54,5 +61,4 @@ Route::middleware('locale')->group(function () {
     });
 
     Route::get('/', [SiteController::class, 'index'])->name('site');
-
 });

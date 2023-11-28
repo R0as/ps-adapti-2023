@@ -33,5 +33,6 @@
     "diffEditor.ignoreTrimWhitespace": false,
     "prettier.vueIndentScriptAndStyle": true,
     "javascript.updateImportsOnFileMove.enabled": "always",
-    "intelephense.diagnostics.undefinedTypes": false
+    "intelephense.diagnostics.undefinedTypes": false,
+    "git.ignoreLimitWarning": true
 }

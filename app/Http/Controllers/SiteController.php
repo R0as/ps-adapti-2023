@@ -2,15 +2,22 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Aluno;
 use Illuminate\Http\Request;
 
 
 class SiteController extends Controller
 {
+    private $alunos;
+    public function __construct(Aluno $aluno)
+    {
+        $this->alunos = $aluno;
+    }
 
     public function index()
     {
-        return view('site.index');
+        $alunos = $this->alunos->paginate(9);
+        return view('site.index', compact('alunos'));
     }
 
 
