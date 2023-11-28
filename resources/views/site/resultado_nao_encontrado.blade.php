@@ -16,12 +16,10 @@
 <body>
   <header class="header">
     <a class="logo" href="{{ route('site') }}"><img src="{{ asset('/site/img/logo.png') }}" alt=""></a>
-    <div class="search">
-      <form action="{{ url('/search') }}" method="GET">
-        <input type="text" name="search" placeholder="Insira um Nome ou Curso:">
-        <button type="submit">Pesquisar</button>
-      </form>
-    </div>
+    <form class="search" action="{{ url('/search') }}" method="GET">
+      <input class="search-field" type="text" name="search" placeholder="Insira um Nome ou Curso:">
+      <button class="button primary" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </form>
     <div class="navbar">
       <ul>
         <li>
