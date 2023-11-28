@@ -126,6 +126,7 @@ html {
         justify-content: space-between;
         padding: 0;
         padding-right: 8px;
+        height: 100%;
     }
     .card .card-img {
         border-radius: 0;
@@ -134,7 +135,8 @@ html {
     }
     .card-info {
         align-items: flex-start;
-        max-width: 60%;
+        width: 60%;
+        height: 90%;
     }
 }
 /* HEADER*/
