@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="{{ asset('site/css/styles.css') }}" rel="stylesheet" type="text/css">
   <script src="https://kit.fontawesome.com/8e0b75544f.js" crossorigin="anonymous"></script>
-  <link rel="shortcut icon" href="{{ asset('/site/img/favicon.png') }}" type="image/x-icon" />
+  <link rel="shortcut icon" href="{{ asset('/site/img/favicon.jpg') }}" type="image/x-icon" sizes="32x32" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
